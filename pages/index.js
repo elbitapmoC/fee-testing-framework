@@ -29,11 +29,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main">
-        <PopularJSQ title="A very famous Javascript interview question" />
-        <Map title="Iterates through the array, computes, returns a new array." />
-        <ForEach title="Iterates through an array, computes, doesn't return a new array." />
-        <Filter title="Based on condition, if condition is met that result will be returned in a new array." />
-        <Reduce title="A very famous Javascript interview question" />
+        {/* <PopularJSQ title="A very famous Javascript interview question" /> */}
+        <Map
+          title=".map( ) Method"
+          description="Iterates through array, computes, &amp; returns a new array."
+        />
+        <ForEach
+          title=".forEach( ) Method"
+          description="Iterates through array, nothing returned."
+        />
+        <Filter
+          title=".filter( ) Method"
+          description="IF condition is met result returned in a new array."
+        />
+        <Reduce
+          title=".reduce( ) Method"
+          description="Takes into account a previous, current &amp; an accumulator"
+        />
       </div>
       <Footer />
     </div>

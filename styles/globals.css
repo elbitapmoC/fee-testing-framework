@@ -13,6 +13,10 @@ pre {
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  background-color: darkslategray;
+  padding: 16px;
+  max-width: 1000px;
+  width: 100%;
 }
 
 pre span {
