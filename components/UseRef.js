@@ -1,11 +1,17 @@
-const Debouncing = ({ title, description }) => {
+import { useRef } from "react";
+
+const UseRef = ({ title, description }) => {
+  const inputEl = useRef(null);
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+    inputEl.current.focus();
+  };
   return (
     <>
-      <h1 className="title text-4xl">{title}</h1>
-      <p className="mt-2">{description}</p>
-      <span className="mb-36" />
+      <input ref={inputEl} type="text" />
+      <button onClick={onButtonClick}>Focus the input</button>
     </>
   );
 };
 
-export default Debouncing;
+export default UseRef;
