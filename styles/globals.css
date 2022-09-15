@@ -19,6 +19,6 @@ pre {
   width: 100%;
 }
 
-pre span {
+.pre {
   color: orange;
 }
