@@ -21,7 +21,7 @@ const Reduce = ({ title, description }) => {
 let sweetness = fruits.reduce((acc, { sweet }) => acc + sweet, 0);
 `}
       </pre>
-      <p>Total sweetness: {sweetness}</p>
+      <p>Total sweetness 🍯: {sweetness}</p>
       <span className="mb-36" />
     </>
   );

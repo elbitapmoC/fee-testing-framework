@@ -9,7 +9,6 @@ const fruits = [];
 arr.forEach(({ name }) => {
   fruits.push(name);
 });
-console.log(fruits);
 
 const ForEach = ({ title, description }) => {
   return (
