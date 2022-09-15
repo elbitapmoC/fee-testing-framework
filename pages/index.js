@@ -9,7 +9,6 @@ import Reduce from "../components/Reduce";
 import Debouncing from "../components/Debouncing";
 import UseEffect from "../components/UseEffect";
 import UseReduce from "../components/UseReduce";
-import UseRef from "../components/UseRef";
 import UseState from "../components/UseState";
 
 export default function Home() {
@@ -34,7 +33,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main">
-        {/* <PopularJSQ title="A very famous Javascript interview question" /> */}
+        <PopularJSQ title="High Order Functions" />
         <Map
           title=".map( ) Method"
           description="Iterates through array, computes, &amp; returns a new array."
@@ -61,15 +60,11 @@ export default function Home() {
         />
         <UseReduce
           title="useReducer"
-          description="Preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one."
+          description="useReducer > useState when state is dependent on another state or when it involves multiple sub-values"
         />
         <UseEffect
           title="useEffect"
-          description="Limits the rate at which a funciton is called."
-        />
-        <UseRef
-          title="useRef"
-          description="Limits the rate at which a funciton is called."
+          description="Allows us to perform side effects-- data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects."
         />
       </div>
       <Footer />
