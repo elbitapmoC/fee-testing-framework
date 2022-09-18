@@ -10,6 +10,7 @@ import Debouncing from "../components/Debouncing";
 import UseEffect from "../components/UseEffect";
 import UseReduce from "../components/UseReduce";
 import UseState from "../components/UseState";
+import RenderingLC from "../components/RenderingLC";
 
 export default function Home() {
   const [count, setCount] = useState(1);
@@ -66,6 +67,7 @@ export default function Home() {
           title="useEffect"
           description="Allows us to perform side effects-- data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects."
         />
+        <RenderingLC title="Rendering Life Cycle" />
       </div>
       <Footer />
     </div>
